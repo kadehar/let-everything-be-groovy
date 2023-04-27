@@ -2,6 +2,8 @@
 
 [Groovy GPath in REST Assured – Part 1: Overview of Groovy](https://www.james-willett.com/groovy-gpath-in-rest-assured-part1-overview/)
 
+[<< К содержанию](https://github.com/kadehar/let-everything-be-groovy/blob/main/README.md)
+
 ## Closures & it
 
 _Closure_ или _замыкания_ в Groovy работают аналогично _lambda_-функциям в Java и Kotlin:
@@ -189,3 +191,5 @@ myList.filter { it > 4 }.sum()
 myList.filter { it > 2 }.min()
 myList.filter { it > 3 && it < 5 }.max()
 ```
+
+[<< К содержанию](https://github.com/kadehar/let-everything-be-groovy/blob/main/README.md)
