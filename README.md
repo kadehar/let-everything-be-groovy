@@ -15,7 +15,7 @@ println multiply(2, 4) //8
 
 Тот же самый код на Java:
 
-```java11
+```java
 BiFunction<Integer, Integer, Integer> multiply = (x, y) -> x * y;
 System.out.println(multiply.apply(2, 4));
 ```
@@ -42,7 +42,7 @@ myList.each {
 
 Тот же самый код на Java:
 
-```java11
+```java
 var myList = List.of(2, 3, 4, 4, 4, 5, 5, 6);
 myList.forEach(it ->
     System.out.println(it)
@@ -51,7 +51,7 @@ myList.forEach(it ->
 
 Вариант выше может быть заменён на _method reference_:
 
-```java11
+```java
 var myList = List.of(2, 3, 4, 4, 4, 5, 5, 6);
 myList.forEach(System.out::println);
 ```
@@ -80,7 +80,7 @@ def greaterThanFive = myList.find { it > 5 } //вернёт 6
 
 Тот же самый код на Java:
 
-```java11
+```java
 var myList = List.of(2, 3, 4, 4, 4, 5, 5, 6);
 myList.stream()
     .filter(it -> it > 5)
@@ -107,7 +107,7 @@ def allValuesGreaterThanTwo = myList.findAll { it > 2 } //список из вс
 
 Тот же самый код на Java:
 
-```java11
+```java
 var myList = List.of(2, 3, 4, 4, 4, 5, 5, 6);
 myList.stream()
     .filter(it -> it > 2)
@@ -135,7 +135,7 @@ def peopleNamesToUpperCase = myList.collect { it.toUpperCase() }
 
 Тот же самый код на Java:
 
-```java11
+```java
 var myList = List.of("Tom", "Dick", "Harry", "Kester");
 myList.stream()
     .map(String::toUpperCase)
@@ -165,7 +165,7 @@ def maxValueBetweenThreeAndFive = myList.findAll { it > 3 && it < 5 }.max() //4
 
 Тот же самый код на Java:
 
-```java11
+```java
 var myList = List.of(2, 3, 4, 4, 4, 5, 5, 6);
 myList.stream()
     .filter(it -> it > 4)
