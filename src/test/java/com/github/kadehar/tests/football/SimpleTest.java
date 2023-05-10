@@ -47,14 +47,14 @@ public class SimpleTest extends TestBase {
     @Test
     @DisplayName("Example 5: Given, When, Then")
     public void extractSingleValue_findSingleTeamName_useAssertion() {
-        //@formatter:off
-        given().
-                when().
-                get("teams/66").
-                then().
-                assertThat().
-                body("name", equalTo("Manchester United FC"));
-        //@formatter:on
+        // @formatter:off
+        given()
+        .when()
+            .get("teams/66")
+        .then()
+            .assertThat()
+            .body("name", equalTo("Manchester United FC"));
+        // @formatter:on
     }
 
     @Test
@@ -85,7 +85,7 @@ public class SimpleTest extends TestBase {
     @DisplayName("Example 9: Extract Multiple Maps of Objects")
     public void extractListOfMapsOfElements_findAllTeamData() {
         Response response = get("competitions/WC/teams");
-        List<Map<String,?>> allTeamData = response.path("teams");
+        List<Map<String, ?>> allTeamData = response.path("teams");
         System.out.println(allTeamData);
     }
 }

@@ -47,14 +47,14 @@ public class SimpleTest extends TestBase {
     @Test
     @DisplayName("Example 5: Given, When, Then")
     public void extractSingleValue_findFirstName_useAssertion() {
-        //@formatter:off
-        given().
-                when().
-                get("users/2").
-                then().
-                assertThat().
-                body("data.first_name", equalTo("Janet"));
-        //@formatter:on
+        // @formatter:off
+        given()
+        .when()
+            .get("users/2")
+        .then()
+            .assertThat()
+            .body("data.first_name", equalTo("Janet"));
+        // @formatter:on
     }
 
     @Test
@@ -85,7 +85,7 @@ public class SimpleTest extends TestBase {
     @DisplayName("Example 9: Extract Multiple Maps of Objects")
     public void extractListOfMapsOfElements_findAllUsersData() {
         Response response = get("users");
-        List<Map<String,?>> allUsersData = response.path("data");
+        List<Map<String, ?>> allUsersData = response.path("data");
         System.out.println(allUsersData);
     }
 }
