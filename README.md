@@ -1,5 +1,7 @@
 # Пусть всё будет Groovy!
 
+[Запись лекции на YouTube](https://youtu.be/_iKjGyt_CSU?si=6qwyBqTyX5iO4uEh)
+
 ## Содержание
 
 1. [Основы Groovy и сравнение с Java  и Kotlin.](https://github.com/kadehar/let-everything-be-groovy/blob/01-intro-to-groovy/README.md)
